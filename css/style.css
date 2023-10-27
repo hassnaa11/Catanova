@@ -343,6 +343,40 @@ li.back a.linkedin {
     text-align: center;
 }
 
+body>div {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .header {
+        width: 100%;
+    }
+
+    .container {
+        width: 380px;
+    }
+
+    .home .container {
+        grid-template-columns: 1fr;
+    }
+
+    .home .background {
+        height: 50%;
+    }
+
+    .upload .circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .box {
+        grid-template-columns: repeat(2, 170px);
+        grid-template-rows: repeat(4, 170px);
+        gap: 20px;
+    }
+
+
+}
 
 /* Small */
 @media (min-width: 768px) {
