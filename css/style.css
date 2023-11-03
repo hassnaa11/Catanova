@@ -49,6 +49,10 @@ body {
         height: 40px !important;
         color: green !important;
     }
+
+    .space {
+        height: 100px !important;
+    }
 }
 
 .text {
@@ -98,9 +102,21 @@ ul {
     box-shadow: 0px -10px 15px 0px var(--header-font);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .header {
-        height: 120px;
+        height: 110px;
+    }
+
+    .header .container {
+        padding-top: 20px;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        height: 90px !important;
+        align-items: flex-start !important;
+    }
+
+    .main-nav {
+        align-self: flex-end !important;
     }
 }
 
@@ -123,7 +139,29 @@ ul {
     font-family: 'Tilt Neon';
     display: flex;
     justify-content: space-between;
-    width: 200px;
+    width: 235px;
+    align-items: center;
+}
+
+@media (max-width: 450px) {
+    .header .container>.logo {
+        width: 135px !important;
+    }
+
+    .header .container>.logo>img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .header .main-nav>ul>li {
+        padding-right: 0 !important;
+        font-size: 14px !important;
+    }
+
+    .header .main-nav>ul>li>a {
+        height: 30px !important;
+    }
+
 }
 
 .orangeLetter {
@@ -168,6 +206,24 @@ ul {
 
 .home>.space {
     height: 210px;
+}
+
+@media (max-width: 450px) {
+    .home>.space {
+        height: 20px !important;
+    }
+
+    .home .main-heading {
+        margin-bottom: -30px !important;
+    }
+
+    .home {
+        height: 630px;
+    }
+
+    .home .background {
+        height: 54% !important;
+    }
 }
 
 .home .main-heading {
@@ -366,6 +422,21 @@ li.back a.linkedin {
     transform: translateX(-100%) rotateY(-180deg);
 }
 
+@media (max-width: 865px) {
+    .box {
+        grid-template-columns: repeat(2, 170px);
+        grid-template-rows: repeat(4, 170px);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 450px) {
+    .contact {
+        padding: 15px;
+    }
+}
+
+
 .footer {
     display: flex;
     justify-content: center;
@@ -398,14 +469,6 @@ body>div {
         width: 150px;
         height: 150px;
     }
-
-    .box {
-        grid-template-columns: repeat(2, 170px);
-        grid-template-rows: repeat(4, 170px);
-        gap: 20px;
-    }
-
-
 }
 
 /* Small */
