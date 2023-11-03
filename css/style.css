@@ -5,6 +5,12 @@
     --font-color: #23262D;
     --header-font: #ff6f00;
     --contact-color: rgb(51 72 73);
+
+    --main-heading-font-size: 40px;
+    --text-font-size: 20px;
+    --nav-font-size: 20px;
+    --footer-font-size: 14px;
+
 }
 
 * {
@@ -29,9 +35,24 @@ body {
     font-family: 'Tilt Neon';
 }
 
+@media (max-width: 400px) {
+    :root {
+        --main-heading-font-size: 20px;
+        --text-font-size: 14px;
+        --nav-font-size: 16px;
+        --footer-font-size: 10px;
+    }
+
+    .home button {
+        font-size: 20px !important;
+        width: 150px !important;
+        height: 40px !important;
+    }
+}
+
 .text {
     line-height: 30px;
-    font-size: 20px;
+    font-size: var(--text-font-size);
 }
 
 a {
@@ -58,7 +79,7 @@ ul {
 
 .main-heading {
     font-weight: bold;
-    font-size: 40px;
+    font-size: var(--main-heading-font-size);
     color: var(--header-font);
     margin-bottom: 20px;
     display: block;
@@ -66,13 +87,20 @@ ul {
 
 /* header 1st part */
 .header {
-    position: fixed;
+    position: sticky;
     top: 0;
     right: 0;
     left: 0;
     z-index: 4;
+    height: 72px;
     background-color: rgba(218, 223, 223, 0.738);
     box-shadow: 0px -10px 15px 0px var(--header-font);
+}
+
+@media (max-width: 400px) {
+    .header {
+        height: 120px;
+    }
 }
 
 .header .container {
@@ -89,7 +117,7 @@ ul {
 
 .header .container>.logo {
     font-weight: bold;
-    font-size: 30px;
+    font-size: var(--main-heading-font-size);
     color: var(--second-color);
     font-family: 'Tilt Neon';
     display: flex;
@@ -99,7 +127,6 @@ ul {
 
 .orangeLetter {
     color: var(--header-font);
-    font-size: 35px;
 }
 
 .header .main-nav>ul {
@@ -111,7 +138,7 @@ ul {
     padding-left: 15px;
     padding-right: 15px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: var(--nav-font-size);
 
     >a {
         height: 72px;
@@ -125,6 +152,7 @@ ul {
         font-weight: bold;
     }
 }
+
 
 .header .main-nav>ul>li:hover {
     color: var(--second-color);
@@ -142,7 +170,7 @@ ul {
 }
 
 .home .main-heading {
-    font-size: 50px;
+    font-size: calc(var(--main-heading-font-size) + 10px);
 }
 
 .home .background {
@@ -152,7 +180,7 @@ ul {
     top: 0;
     width: 100%;
     /* height: 51%; */
-    margin-top: 72px;
+    /* margin-top: 72px; */
 }
 
 .home .container {
@@ -161,7 +189,7 @@ ul {
 }
 
 .home .text {
-    font-size: 35px;
+    font-size: calc(var(--text-font-size) + 10px);
     line-height: 40px;
     color: var(--contact-color);
     font-weight: bold;
@@ -341,6 +369,7 @@ li.back a.linkedin {
     display: flex;
     justify-content: center;
     text-align: center;
+    font-size: var(--footer-font-size);
 }
 
 body>div {
