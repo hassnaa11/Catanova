@@ -388,11 +388,24 @@ div .eyeDisease:hover {
     content: "Diabetic Retinopathy";
 }
 
+
+
 /* features 4th part */
+.features-section .text {
+    text-align: center;
+}
+
+.features-section .text span {
+    font-size: var(--main-heading-font-size);
+}
+
+
 .features-box {
-    display: flex;
+    display: grid;
+    grid-template-columns: 300px auto 300px;
     position: relative;
     width: 100%;
+    margin-top: 50px;
 }
 
 .center-img {
@@ -404,16 +417,33 @@ div .eyeDisease:hover {
 .left-features {
     display: flex;
     flex-direction: column;
-    width: 150px;
 }
 
 .right-features {
     display: flex;
     flex-direction: column;
-    width: 150px;
-    position: absolute;
     right: 0;
 }
+
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 160px;
+}
+
+.feature img {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.feature span {
+    display: block;
+    font-size: var(--nav-font-size);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
 
 
 
