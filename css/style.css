@@ -290,6 +290,33 @@ ul {
 }
 
 .home button {
+    width: 170px;
+    height: 60px;
+    appearance: unset;
+    /* background-color: rgb(218 223 223 / 68%); */
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    /* color: var(--header-font); */
+    /* box-shadow: 0px 0px 10px 3px var(--second-color); */
+    background-color: var(--second-color);
+    color: white;
+    font-size: calc(var(--text-font-size) + 8px);
+    transition: 0.3s;
+    margin-right: 30px;
+}
+
+.home button:hover {
+    cursor: pointer;
+    background-color: rgb(72 101 102 / 68%);
+    transform: perspective(500px) translateZ(25px);
+    box-shadow: 0px 0px 10px 3px var(--light-color);
+    /* box-shadow: 0px 0px 8px 0px white; */
+
+    /* transform: perspective(500px) translateZ(25px); */
+}
+
+/* .home button {
     color: var(--contact-color);
     appearance: unset;
     background-color: rgb(218 223 223 / 68%);
@@ -308,9 +335,10 @@ ul {
 .home button:hover {
     cursor: pointer;
     /* box-shadow: 0px 0px 8px 0px var(--second-color); */
-    /* background-color: rgb(218 223 223 / 68%); */
+/* background-color: rgb(218 223 223 / 68%);
     transform: perspective(500px) translateZ(25px);
-}
+} 
+*/
 
 .home .container img {
     z-index: 3;
@@ -397,8 +425,19 @@ div .eyeDisease:hover {
 
 .features-section .text span {
     font-size: var(--main-heading-font-size);
+    position: relative;
 }
 
+.features-section .text span span::after {
+    content: "";
+    width: 100px;
+    height: 4px;
+    background-color: var(--header-font);
+    position: absolute;
+    top: 55px;
+    left: 0px;
+
+}
 
 .features-box {
     display: grid;
