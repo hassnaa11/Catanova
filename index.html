@@ -19,6 +19,7 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
@@ -225,11 +226,13 @@
                 <br> <br>
                 <div class="scanDiv">
                     <div class="scanButtons">
-                        <button>Choose File</button>
-                        <button>Scan</button>
+                        <label for="imageInput">Chose an image</label>
+                        <input type="file" id="imageInput" onchange="previewImage()" style="display: none;"/>
+                        <label onclick="uploadImage()">Scan</label>
                     </div>
-                    <div class="scannedImage"><img src="./images/cataract.png" alt=""></div>
-                    <div class="scanResult">The eye disease is Cataract</div>
+
+                    <div class="scannedImage" id="preview"></div>
+                    <div class="scanResult" id="APIresponce"></div>
                 </div>
             </div>
             <div class="upload">
@@ -338,6 +341,7 @@
                 University <br><br> All Rights Reserved, Copyright 2023, CataNova</p>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
