@@ -8,14 +8,15 @@ function uploadImage() {
         method: 'POST',
         body: formData
     })
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('APIresponce').innerHTML = 'Scaned image maybe have ' + data;
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        document.getElementById('APIresponce').innerHTML = 'try again later.';
-    });
+        .then(response => response.text())
+        .then(data => {
+            let result = (data != 'normal') ? `scanned image identified as ${data}` : 'scanned image seems normal';
+            document.getElementById('APIresponce').innerHTML = result;
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            document.getElementById('APIresponce').innerHTML = 'try again later.';
+        });
 }
 function previewImage() {
     var fileInput = document.getElementById('imageInput');
