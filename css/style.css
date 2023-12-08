@@ -618,9 +618,8 @@ div .eyeDisease:hover {
     justify-content: space-evenly;
     align-items: center;
 }
-
-.scanButtons button {
-    width: 160px;
+.scanButtons label {
+    width: 190px;
     height: 50px;
     appearance: unset;
     /* background-color: rgb(218 223 223 / 68%); */
@@ -634,8 +633,7 @@ div .eyeDisease:hover {
     font-size: calc(var(--text-font-size) + 5px);
     transition: 0.3s;
 }
-
-.scanButtons button:hover {
+.scanButtons label:hover {
     cursor: pointer;
     background-color: rgb(72 101 102 / 68%);
     /* box-shadow: 0px 0px 8px 0px white; */
