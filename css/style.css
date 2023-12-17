@@ -111,7 +111,6 @@ ul {
 .main-heading {
     font-weight: bold;
     font-size: var(--main-heading-font-size);
-    /* color: var(--header-font); */
     margin-bottom: 20px;
     display: block;
 }
@@ -234,7 +233,6 @@ ul {
 /* home 2nd part */
 .home {
     position: relative;
-    /* height: 100vh; */
 }
 
 .home>.space {
@@ -267,7 +265,7 @@ ul {
 
 @media (max-width: 768px) {
     .home .background {
-        height: 68% !important;
+        height: 75% !important;
     }
 }
 
@@ -284,8 +282,6 @@ ul {
     top: 0;
     width: 100%;
     height: calc(100vh - 80px);
-    /* height: 51%; */
-    /* margin-top: 72px; */
 }
 
 .home .container {
@@ -297,11 +293,9 @@ ul {
     font-size: calc(var(--text-font-size) + 10px);
     line-height: 40px;
     color: black;
-    /* font-weight: bold; */
 }
 
 .home .text h1 {
-    /* font-size: calc(var(--main-heading-font-size) + 10px); */
     margin-bottom: 25px;
     display: inline-block;
     line-height: normal;
@@ -327,12 +321,9 @@ ul {
     width: 160px;
     height: 55px;
     appearance: unset;
-    /* background-color: rgb(218 223 223 / 68%); */
     border: none;
     border-radius: 10px;
     font-weight: bold;
-    /* color: var(--header-font); */
-    /* box-shadow: 0px 0px 10px 3px var(--second-color); */
     background-color: var(--second-color);
     color: white;
     font-size: calc(var(--text-font-size) + 6px);
@@ -343,11 +334,6 @@ ul {
 .home button:hover {
     cursor: pointer;
     background-color: rgb(93 126 127);
-    /* transform: perspective(500px) translateZ(25px); */
-    /* box-shadow: 0px 0px 10px 3px var(--light-color); */
-    /* box-shadow: 0px 0px 8px 0px white; */
-
-    /* transform: perspective(500px) translateZ(25px); */
 }
 
 .home .scan-home-button {
@@ -358,37 +344,13 @@ ul {
     background-color: var(--header-font);
 }
 
-/* .home button {
-    color: var(--contact-color);
-    appearance: unset;
-    background-color: rgb(218 223 223 / 68%);
-    border: none;
-    border-radius: 10px;
-    width: 170px;
-    height: 60px;
-    font-weight: bold;
-    color: var(--header-font);
-    box-shadow: 0px 0px 10px 3px var(--second-color);
-    font-size: 28px;
-    transition: 0.3s;
-    margin-right: 30px;
-}
-
-.home button:hover {
-    cursor: pointer;
-    /* box-shadow: 0px 0px 8px 0px var(--second-color); */
-/* background-color: rgb(218 223 223 / 68%);
-    transform: perspective(500px) translateZ(25px);
-} 
-*/
-
 .home .container img {
     z-index: 3;
     align-self: center;
     width: 100%;
     border-radius: 15px;
-    /* box-shadow: 5px 5px 15px 0px rgb(72, 101, 102); */
 }
+
 
 /* Diseases 3rd part */
 .diseases .container {
@@ -418,15 +380,6 @@ ul {
     top: 38px;
     left: 0px;
 }
-
-/* /* .diseases .container img {
-    border-radius: 15px;
-    display: flex;
-    margin: auto;
-    width: 50%;
-    margin-bottom: 50px;
-     box-shadow: 4px 4px 10px 0px var(--second-color); 
-} */
 
 div .eyeDisease {
     background-color: var(--main-color);
@@ -598,15 +551,13 @@ div .eyeDisease:hover {
 }
 
 
-
-
-
 /* check now 5th part */
 .checkNow .checkcontainer {
-    background-color: var(--main-color);
+    /* background-color: var(--main-color); */
     padding: 0px 75px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    position: relative;
 }
 
 @media (max-width: 615px) {
@@ -618,13 +569,16 @@ div .eyeDisease:hover {
 }
 
 .checkNow .space {
-    background-color: var(--main-color);
     height: 100px;
 }
 
 .checkNow .right {
+    background-color: var(--main-color);
+    border-radius: 80px;
+    padding-top: 30px;
     margin: auto;
     text-align: center;
+    box-shadow: 0px 0px 16px 0px var(--second-color);
 }
 
 .checkNow .main-heading {
@@ -637,8 +591,7 @@ div .eyeDisease:hover {
     width: 500px;
     height: 500px;
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    background-color: var(--light-color);
+    grid-template-rows: repeat(3, auto);
     border-radius: 15px;
 }
 
@@ -669,10 +622,7 @@ div .eyeDisease:hover {
 
 .scanButtons label:hover {
     cursor: pointer;
-    background-color: rgb(72 101 102 / 68%);
-    /* box-shadow: 0px 0px 8px 0px white; */
-
-    /* transform: perspective(500px) translateZ(25px); */
+    background-color: rgb(93 126 127);
 }
 
 .checkNow .scannedImage {
@@ -680,9 +630,8 @@ div .eyeDisease:hover {
     height: 250px;
     display: flex;
     margin: auto;
+    margin-top: 25px;
     border-radius: 15px;
-    /* box-shadow: 0px 0px 10px 3px var(--second-color);
-    box-shadow: 0px 0px 10px 3px white; */
     overflow: hidden;
 }
 
@@ -691,8 +640,9 @@ div .eyeDisease:hover {
     height: 50px;
     margin: auto;
     margin-top: 25px;
-    border-radius: 15px;
-    background-color: rgb(218 223 223 / 68%);
+    border-radius: 25px;
+    /* background-color: rgb(218 223 223 / 68%); */
+    background-color: var(--light-color);
     /* box-shadow: 0px 0px 10px 3px var(--second-color); */
     /* color: var(--header-font); */
     color: var(--second-color);
@@ -730,10 +680,12 @@ div .eyeDisease:hover {
 }
 
 .checkNow .upload .upload-text {
-    font-size: 30px;
-    margin-top: 110px;
+    font-size: var(--main-heading-font-size);
+    /* margin-top: 110px; */
+    margin: 110px 40px;
+    margin-bottom: 0;
     display: inline-block;
-    margin-left: 40px;
+    /* margin-left: 40px; */
     color: #000;
     text-align: center;
 }
@@ -752,6 +704,44 @@ div .eyeDisease:hover {
     color: var(--second-color);
     width: 120px;
 }
+
+@media (max-width: 768px) {
+    .checkNow .checkcontainer {
+        grid-template-columns: none;
+        grid-template-rows: repeat(2, auto);
+        padding: 0;
+
+    }
+
+    .checkNow .upload {
+        border: none;
+    }
+
+    .checkNow .scanDiv {
+        width: 325px;
+        height: 325px;
+    }
+
+    .checkNow .scanResult {
+        width: 280px;
+
+    }
+
+    .scanButtons label {
+        width: 125px;
+    }
+
+    .upload .circle {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* .checkNow .upload .upload-text {
+        margin-left: 0;
+    } */
+}
+
+
 
 
 /* contact last part */
@@ -918,11 +908,6 @@ body>div {
 
     .home .container {
         grid-template-columns: 1fr;
-    }
-
-    .upload .circle {
-        width: 150px;
-        height: 150px;
     }
 }
 
