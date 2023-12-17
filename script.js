@@ -1,7 +1,7 @@
 function uploadImage() {
     var formData = new FormData();
     var fileInput = document.getElementById('imageInput');
-    document.getElementById('APIresponce').innerHTML = 'scaning...';
+    document.getElementById('APIresponce').innerHTML = 'scanning...';
     console.log("ok");
     formData.append('image', fileInput.files[0]);
     fetch('https://dlmodel-001-site1.btempurl.com/api/Model', {
