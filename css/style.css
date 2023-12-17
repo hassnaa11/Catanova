@@ -78,6 +78,10 @@ body {
     .space {
         height: 100px !important;
     }
+
+    .text span {
+        line-height: 40px;
+    }
 }
 
 .text {
@@ -193,6 +197,7 @@ ul {
     .header .main-nav>ul>li>a {
         height: 30px !important;
     }
+
 
 }
 
@@ -358,6 +363,10 @@ ul {
     justify-content: space-between;
 }
 
+.diseases .text {
+    margin-top: 30px;
+}
+
 .diseases .text p {
     text-align: center;
     margin-bottom: 100px;
@@ -366,7 +375,7 @@ ul {
 .diseases .text span {
     font-size: var(--main-heading-font-size);
     color: var(--font-color);
-    margin-top: 30px;
+    /* margin-top: 30px; */
     display: inline-block;
     position: relative;
 }
@@ -541,12 +550,14 @@ div .eyeDisease:hover {
     }
 }
 
-@media (max-width: 768px) and (min-width: 615px) {}
-
 @media (max-width: 768px) {
     .features-box {
         grid-template-columns: none;
         grid-template-rows: auto auto auto;
+    }
+
+    .features-section .text span span::after {
+        top: 40px;
     }
 }
 
@@ -723,8 +734,9 @@ div .eyeDisease:hover {
     }
 
     .checkNow .scanResult {
-        width: 280px;
-
+        width: 235px;
+        height: 40px;
+        margin-top: 0;
     }
 
     .scanButtons label {
@@ -736,9 +748,10 @@ div .eyeDisease:hover {
         height: 200px;
     }
 
-    /* .checkNow .upload .upload-text {
-        margin-left: 0;
-    } */
+    .scannedImage {
+        width: 150px !important;
+        height: 150px !important;
+    }
 }
 
 
