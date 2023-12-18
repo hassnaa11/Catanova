@@ -295,7 +295,7 @@ ul {
 }
 
 .home .text {
-    font-size: calc(var(--text-font-size) + 10px);
+    font-size: calc(var(--text-font-size) + 8px);
     line-height: 40px;
     color: black;
 }
@@ -375,6 +375,7 @@ ul {
 .diseases .text span {
     font-size: var(--main-heading-font-size);
     color: var(--font-color);
+    text-align: center;
     /* margin-top: 30px; */
     display: inline-block;
     position: relative;
