@@ -443,6 +443,47 @@ div .eyeDisease:hover {
     content: "Diabetic Retinopathy";
 }
 
+.diseases-images {
+    margin-top: 50px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 80px;
+    gap: 60px;
+}
+
+.diseases-images div {
+    background-color: var(--main-color);
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px 0px var(--second-color);
+    transition: 1s ease;
+}
+
+.diseases-images div:hover {
+    transform: translateY(-50px);
+    box-shadow: 8px 8px 15px 1px var(--second-color);
+}
+
+.diseases-images div h2 {
+    background-color: var(--second-color);
+    color: white;
+    border-radius: 15px;
+    padding: 0;
+    margin: auto;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.diseases-images img {
+    margin-bottom: 25px;
+    border-radius: 15px;
+}
+
 @media (max-width: 615px) {
     .eyeDisease.cataract::before {
         width: 392px;
@@ -457,6 +498,20 @@ div .eyeDisease:hover {
     .eyeDisease.retinopathy::before {
         width: 362px;
         margin-top: 362px;
+    }
+
+    .diseases-images {
+        grid-template-columns: repeat(2, auto);
+        gap: 40px;
+    }
+
+    .diseases-images img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .diseases-images div h2 {
+        font-size: var(--nav-font-size);
     }
 }
 
@@ -474,6 +529,35 @@ div .eyeDisease:hover {
     .eyeDisease.retinopathy::before {
         width: 450px;
         margin-top: 450px;
+    }
+
+    .diseases-images {
+        grid-template-columns: repeat(2, auto);
+        gap: 40px;
+    }
+
+    .diseases-images img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .diseases-images div h2 {
+        font-size: var(--nav-font-size);
+    }
+}
+
+@media (max-width: 1070px) and (min-width: 768px) {
+    .diseases-images {
+        gap: 25px;
+    }
+
+    .diseases-images img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .diseases-images div h2 {
+        font-size: var(--nav-font-size);
     }
 }
 
@@ -692,7 +776,8 @@ div .eyeDisease:hover {
 }
 
 .checkNow .upload .upload-text {
-    font-size: var(--main-heading-font-size);
+    /* font-size: var(--main-heading-font-size); */
+    font-size: calc(var(--text-font-size) + 12px);
     /* margin-top: 110px; */
     margin: 110px 40px;
     margin-bottom: 0;
