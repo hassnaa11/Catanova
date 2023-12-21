@@ -854,6 +854,16 @@ div .eyeDisease:hover {
     }
 }
 
+.contact .main-heading {
+    margin-bottom: 40px;
+}
+
+.contact .text {
+    color: white;
+    margin-bottom: 50px;
+    font-size: var(--text-font-size);
+}
+
 .box {
     display: grid;
     grid-template-columns: repeat(4, 170px);
