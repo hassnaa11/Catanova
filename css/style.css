@@ -1,22 +1,13 @@
 :root {
-    /* --main-color: #adc4c5; */
     --main-color: rgb(194 210 211);
-    /* --main-color: #D4E0DA; */
-    /* --main-color: #D4E0DA; */
     --second-color: rgb(72, 101, 102);
-    /* --light-color: rgb(218, 223, 223); */
     --light-color: #E7E6E6;
-    --font-color: #23262D;
     --header-font: #ff6f00;
-    /* --header-font:#e0843d; */
-    /* --header-font: #a4f0d0; */
     --contact-color: rgb(51 72 73);
-
     --main-heading-font-size: 40px;
     --text-font-size: 20px;
     --nav-font-size: 20px;
     --footer-font-size: 14px;
-
 }
 
 * {
@@ -37,7 +28,6 @@ html {
 body {
     font-family: "Work Sans", sans-serif;
     background-color: var(--light-color);
-    color: var(--font-color);
     font-family: 'Tilt Neon';
 }
 
@@ -60,7 +50,6 @@ body {
     }
 }
 
-/* kont 3amlaha 450px */
 @media (max-width: 615px) {
     :root {
         --main-heading-font-size: 30px;
@@ -131,16 +120,15 @@ ul {
     box-shadow: 0px -10px 15px 0px var(--contact-color);
 }
 
-
 @media (max-width: 544px) {
     .header {
         height: 110px;
     }
 
     .header .container {
-        padding-top: 20px;
-        padding-left: 20px !important;
-        padding-right: 20px !important;
+        padding-top: 15px;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
         height: 90px !important;
         align-items: flex-start !important;
     }
@@ -185,8 +173,8 @@ ul {
     }
 
     .header .container>.logo>img {
-        width: 34px;
-        height: 34px;
+        width: 60px;
+        height: 60px;
     }
 
     .header .main-nav>ul>li {
@@ -197,8 +185,6 @@ ul {
     .header .main-nav>ul>li>a {
         height: 30px !important;
     }
-
-
 }
 
 .orangeLetter {
@@ -220,12 +206,6 @@ ul {
         height: 80px;
         display: flex;
         align-items: center;
-    }
-
-    *:focus {
-        border-bottom: 3px solid white;
-        color: var(--second-color);
-        font-weight: bold;
     }
 }
 
@@ -265,6 +245,10 @@ ul {
 
     .home .background {
         height: 75% !important;
+    }
+
+    .home .container img {
+        margin-top: -25px;
     }
 }
 
@@ -374,9 +358,7 @@ ul {
 
 .diseases .text span {
     font-size: var(--main-heading-font-size);
-    color: var(--font-color);
     text-align: center;
-    /* margin-top: 30px; */
     display: inline-block;
     position: relative;
 }
@@ -512,6 +494,20 @@ div .eyeDisease:hover {
 
     .diseases-images div h2 {
         font-size: var(--nav-font-size);
+    }
+
+    div .eyeDisease:hover {
+        transform: translateX(20px);
+        box-shadow: -4px -4px 10px 0px var(--second-color);
+    }
+
+    .eyeDisease:hover::before {
+        transform: translateY(-20px);
+    }
+
+    .diseases-images div:hover {
+        transform: translateY(-30px);
+        box-shadow: 8px 8px 15px 1px var(--second-color);
     }
 }
 
@@ -649,7 +645,6 @@ div .eyeDisease:hover {
 
 /* check now 5th part */
 .checkNow .checkcontainer {
-    /* background-color: var(--main-color); */
     padding: 0px 75px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -701,12 +696,9 @@ div .eyeDisease:hover {
     width: 200px;
     height: 50px;
     appearance: unset;
-    /* background-color: rgb(218 223 223 / 68%); */
     border: none;
     border-radius: 10px;
     font-weight: bold;
-    /* color: var(--header-font); */
-    /* box-shadow: 0px 0px 10px 3px var(--second-color); */
     background-color: var(--second-color);
     color: white;
     font-size: calc(var(--text-font-size) + 5px);
@@ -737,10 +729,7 @@ div .eyeDisease:hover {
     margin: auto;
     margin-top: 25px;
     border-radius: 25px;
-    /* background-color: rgb(218 223 223 / 68%); */
     background-color: var(--light-color);
-    /* box-shadow: 0px 0px 10px 3px var(--second-color); */
-    /* color: var(--header-font); */
     color: var(--second-color);
     display: flex;
     align-items: center;
@@ -770,19 +759,14 @@ div .eyeDisease:hover {
     animation-name: up;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-
     box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.1) inset, 15px 25px 10px rgb(0, 0, 0, 0.05), 15px 20px 20px rgb(0, 0, 0, .05), inset -10px -10px 15px rgb(255, 255, 255, 0.9);
-    /* box-shadow: 15px 25px 10px rgb(0, 0, 0, 0.05), 15px 20px 20px rgb(0, 0, 0, .05); */
 }
 
 .checkNow .upload .upload-text {
-    /* font-size: var(--main-heading-font-size); */
     font-size: calc(var(--text-font-size) + 12px);
-    /* margin-top: 110px; */
     margin: 110px 40px;
     margin-bottom: 0;
     display: inline-block;
-    /* margin-left: 40px; */
     color: #000;
     text-align: center;
 }
@@ -841,8 +825,6 @@ div .eyeDisease:hover {
 }
 
 
-
-
 /* contact last part */
 .contact {
     padding: 50px;
@@ -862,6 +844,7 @@ div .eyeDisease:hover {
     color: white;
     margin-bottom: 50px;
     font-size: var(--text-font-size);
+    text-align: center;
 }
 
 .box {
@@ -874,7 +857,7 @@ div .eyeDisease:hover {
 
 .box ul {
     transform-style: preserve-3d;
-    transition: transform 1s;
+    transition: transform 1.2s;
     transform-origin: right center;
     position: relative;
 }
@@ -903,7 +886,6 @@ li.back {
     font-weight: bold;
     font-size: 18px;
     color: var(--header-font);
-    /* color: var(--contact-color); */
 }
 
 li.back>.backimg {
@@ -1020,7 +1002,7 @@ body>div {
     }
 }
 
-/* Small */
+
 @media (min-width: 768px) {
     .container {
         width: 750px;
@@ -1029,14 +1011,8 @@ body>div {
     .home .container {
         grid-template-columns: 1fr;
     }
-
-    /* .home .background {
-        height: 50%;
-    } */
-
 }
 
-/* Medium */
 @media (min-width: 992px) {
     .container {
         width: 970px;
@@ -1047,7 +1023,6 @@ body>div {
     }
 }
 
-/* Large */
 @media (min-width: 1200px) {
     .container {
         width: 1170px;
