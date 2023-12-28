@@ -31,6 +31,15 @@ body {
     font-family: 'Tilt Neon';
 }
 
+.dark-mode {
+    background-color: black;
+    color: white;
+
+    .home .background {
+        opacity: 32% !important;
+    }
+}
+
 @media (max-width: 768px) {
     :root {
         --main-heading-font-size: 35px;
